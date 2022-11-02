@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso</title>
+
+    <link rel="stylesheet" href="./css/estilo.css" />
+</head>
+<header>
+    <img src="./img/coderhouse.jpeg" alt="" class="coderimage">
+    <h1 class="coder">Cine Coderhouse</h1>
+    
+</header>
+<body>
+<main>
+<div class="flex-container">
+    <div class="flex-card">
+        <img src="" alt="">
+        <img src="./img/halloween.jpg" alt="" class="halloween">
+        <h1 class="titulo-peli">Halloween Night</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus numquam cumque sapiente</p>
+    </div>
+</div>
+<div class="botones">
+        <h4>Reservar fecha</h4>
+        <div class="botones">
+        <form id="reserva">
+
+            <div>
+            <input type="text" id="nombre" placeholder="Nombre" autocomplete="off" />
+            </div>
+            <div>
+            <input type="text" id="apellido" placeholder="Apellido" autocomplete="off" />
+            </div>
+
+            <button type="submit">Reservar</button>
+        </form>
+
+        <table id="fechasReservadas" style="margin-top: 1rem;">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbodyFechasReservadas">
+
+            </tbody>
+        </table>
+
+        <select id="selectOrdenar" style="margin-top: 1rem">
+            <option value="">Seleccionar órden</option>
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+            <option value="original">Original</option>
+        </select>
+
+        <button type="button" id="limpiarLocalStorage" style="margin-top: 1rem">Limpiar local storage</button>
+    </div>
+</main>
+<script src="./javascrip/script.js"></script>
+
+
+</body>
+</html>
